@@ -331,3 +331,21 @@
 // function greet(name){
 //     return name === "Johnny" ? "Hello, my love!" : "Hello, " + name + "!";
 //   }
+
+
+// Our football team has finished the championship.
+//
+//     Our team's match results are recorded in a collection of strings. Each match is represented by a string in the format "x:y", where x is our team's score and y is our opponents score.
+
+// function points(games) {
+//     let result = 0;
+//     games.forEach(i => {
+//         let j = i.split(':')
+//         if(+j[0] > +j[1]) result += 3;
+//         if(+j[0] < +j[1]) result += 0;
+//         if(+j[0] === +j[1]) result += 1
+//     })
+//     return result;
+// }
+//
+// console.log(points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"]))
