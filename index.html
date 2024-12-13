@@ -14,18 +14,11 @@
 
     <script>
 
-        function points(games) {
-            let result = 0;
-            games.forEach(i => {
-                let j = i.split(':')
-                if(+j[0] > +j[1]) result += 3;
-                if(+j[0] < +j[1]) result += 0;
-                if(+j[0] === +j[1]) result += 1
-            })
-            return result;
+        function bonusTime(salary, bonus) {
+            return bonus ? `£${salary * 10}` : `£${salary}`;
         }
 
-        console.log(points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"]))
+        console.log(bonusTime(10000, true))
 
 
     </script>

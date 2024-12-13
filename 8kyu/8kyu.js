@@ -349,3 +349,114 @@
 // }
 //
 // console.log(points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"]))
+
+
+// function arrayPlusArray(arr1, arr2) {
+//     return arr1.concat(arr2).reduce((a, b) => a + b);
+// }
+//
+// console.log(arrayPlusArray([-1, -2, -3], [-4, -5, -6]))
+
+
+// You are given the length and width of a 4-sided polygon. The polygon can either be a rectangle or a square.
+//     If it is a square, return its area. If it is a rectangle, return its perimeter.
+
+/*
+const areaOrPerimeter = function(l , w) {
+    return l === w ? l * w : (l * 2) + (w * 2);
+};
+
+console.log(areaOrPerimeter(3,  3))*/
+
+
+// Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+//
+//     Return your answer as a number.
+
+/*
+function sumMix(x){
+    return x.reduce((a, b) => +a + +b, 0);
+}
+
+console.log(sumMix([9, 3, '7', '3']))*/
+
+
+// After a hard quarter in the office you decide to get some rest on a vacation. So you will book a flight for you and your girlfriend and try to leave all the mess behind you.
+//
+//     You will need a rental car in order for you to get around in your vacation. The manager of the car rental makes you some good offers.
+//
+//     Every day you rent the car costs $40. If you rent the car for 7 or more days, you get $50 off your total. Alternatively, if you rent the car for 3 or more days, you get $20 off your total.
+//
+//     Write a code that gives out the total amount for different days(d).
+
+
+/*
+function rentalCarCost(d) {
+    if(d >= 3 && d < 7) return (d * 40) - 20;
+    if(d >= 7) return (d * 40) - 50;
+    return d * 40;
+}
+
+console.log(rentalCarCost(3))*/
+
+
+
+// It's the academic year's end, fateful moment of your school report. The averages must be calculated. All the students come to you and entreat you to calculate their average for them. Easy ! You just need to write a script.
+//
+//     Return the average of the given array rounded down to its nearest integer.
+//
+//     The array will never be empty.
+
+/*
+function getAverage(marks){
+    return Math.floor(marks.reduce((a, b) => a + b, 0) / marks.length);
+}
+
+
+console.log(getAverage([1,2,3,4,5,]))*/
+
+
+// All of the animals are having a feast! Each animal is bringing one dish. There is just one rule: the dish must start and end with the same letters as the animal's name. For example, the great blue heron is bringing garlic naan and the chickadee is bringing chocolate cake.
+//
+// Write a function feast that takes the animal's name and dish as arguments and returns true or false to indicate whether the beast is allowed to bring the dish to the feast.
+//
+// Assume that beast and dish are always lowercase strings, and that each has at least two letters. beast and dish may contain hyphens and spaces, but these will not appear at the beginning or end of the string. They will not contain numerals.
+
+// function feast(beast, dish) {
+//     console.log(beast[0])
+//     return beast.split('')[0] === dish.split('')[0] && beast.split('')[beast.length - 1] === dish.split('')[dish.length - 1];
+// }
+//
+// console.log(feast("brown bear", "bear claw"))
+
+
+
+
+// You take your son to the forest to see the monkeys. You know that there are a certain number there (n), but your son is too young to just appreciate the full number, he has to start counting them from 1.
+//
+// As a good parent, you will sit and count with him. Given the number (n), populate an array with all numbers up to and including that number, but excluding zero.
+
+// function monkeyCount(n) {
+//     const res = []
+//     for (let i = 1; i <= n; i++) {
+//         res.push(i);
+//     }
+//     return res;
+// }
+//
+// monkeyCount(5)
+
+
+// It's bonus time in the big city! The fatcats are rubbing their paws in anticipation... but who is going to make the most money?
+//
+// Build a function that takes in two arguments (salary, bonus). Salary will be an integer, and bonus a boolean.
+//
+//     If bonus is true, the salary should be multiplied by 10. If bonus is false, the fatcat did not make enough money and must receive only his stated salary.
+
+
+/*
+function bonusTime(salary, bonus) {
+    return bonus ? `£${salary * 10}` : `£${salary}`;
+}
+
+console.log(bonusTime(10000, true))*/
