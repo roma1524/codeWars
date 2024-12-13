@@ -14,11 +14,27 @@
 
     <script>
 
-        function bonusTime(salary, bonus) {
-            return bonus ? `£${salary * 10}` : `£${salary}`;
+        function arithmetic(a, b, operator){
+            switch(operator){
+                case 'add':
+                    return a + b;
+                    break;
+                case 'subtract':
+                    return a - b;
+                    break;
+                case 'multiply':
+                    return a * b;
+                    break;
+                case 'divide':
+                    return a / b;
+                    break;
+            }
         }
 
-        console.log(bonusTime(10000, true))
+        console.log(arithmetic(1, 2, "add"))
+        console.log(arithmetic(8, 2, "subtract"))
+        console.log(arithmetic(5, 2, "multiply"))
+        console.log(arithmetic(8, 2, "divide"))
 
 
     </script>
