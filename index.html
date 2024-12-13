@@ -14,27 +14,17 @@
 
     <script>
 
-        function arithmetic(a, b, operator){
-            switch(operator){
-                case 'add':
-                    return a + b;
-                    break;
-                case 'subtract':
-                    return a - b;
-                    break;
-                case 'multiply':
-                    return a * b;
-                    break;
-                case 'divide':
-                    return a / b;
-                    break;
-            }
-        }
+        var capitals = function (word) {
+            const resArr = [];
+            word.split('').forEach((el, i) => {
+                if(el.toUpperCase() === el) {
+                    resArr.push(i);
+                }
+            })
+                return resArr;
+        };
 
-        console.log(arithmetic(1, 2, "add"))
-        console.log(arithmetic(8, 2, "subtract"))
-        console.log(arithmetic(5, 2, "multiply"))
-        console.log(arithmetic(8, 2, "divide"))
+        console.log(capitals('CodEWaRs'))
 
 
     </script>

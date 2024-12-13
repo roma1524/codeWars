@@ -172,3 +172,34 @@ console.log(arithmetic(8, 2, "divide"))*/
 
 
 
+// As a part of this Kata, you need to create a function that when provided with a triplet, returns the index of the numerical element that lies between the other two elements.
+//
+//     The input to the function will be an array of three distinct numbers (Haskell: a tuple).
+
+/*
+function gimme (triplet) {
+    const newArr = [...triplet]
+    let sortedEl = newArr.sort((a, b) => a - b)[1];
+
+    return triplet.findIndex(el => el === sortedEl);
+}
+
+console.log(gimme([2, 3, 1]))
+console.log(gimme([5, 10, 14]))
+console.log(gimme([2.1, 3.2, 1.4]))
+console.log(gimme([5.9, 10.4, 14.2]))*/
+
+
+// Write a function that takes a single non-empty string of only lowercase and uppercase ascii letters (word) as its argument, and returns an ordered list containing the indices of all capital (uppercase) letters in the string.
+
+// var capitals = function (word) {
+//     const resArr = [];
+//     word.split('').forEach((el, i) => {
+//         if(el.toUpperCase() === el) {
+//             resArr.push(i);
+//         }
+//     })
+//     return resArr;
+// };
+//
+// console.log(capitals('CodEWaRs'))
