@@ -203,3 +203,182 @@ console.log(gimme([5.9, 10.4, 14.2]))*/
 // };
 //
 // console.log(capitals('CodEWaRs'))
+
+
+
+// The two oldest ages function/method needs to be completed. It should take an array of numbers as its argument and return the two highest numbers within the array. The returned value should be an array in the format [second oldest age,  oldest age].
+//
+// The order of the numbers passed in could be any order. The array will always include at least 2 items. If there are two or more oldest age, then return both of them in array format.
+
+
+// function twoOldestAges(ages){
+//     const res = ages.sort((a, b) => a - b);
+//     return [res[res.length -2], res[res.length -1]];
+// }
+//
+// console.log(twoOldestAges([1,5,87,45,8,8]))
+
+
+// Create a function that returns the name of the winner in a fight between two fighters.
+//
+//     Each fighter takes turns attacking the other and whoever kills the other first is victorious. Death is defined as having health <= 0.
+//
+// Each fighter will be a Fighter object/instance. See the Fighter class below in your chosen language.
+//
+//     Both health and damagePerAttack (damage_per_attack for python) will be integers larger than 0. You can mutate the Fighter objects.
+//
+//     Your function also receives a third argument, a string, with the name of the fighter that attacks first.
+
+
+/*
+function Fighter(name, health, damagePerAttack) {
+    this.name = name;
+    this.health = health;
+    this.damagePerAttack = damagePerAttack;
+    this.toString = function () {
+        return this.name;
+    }
+}
+
+
+function declareWinner(fighter1, fighter2, firstAttacker) {
+    let mark = true;
+    let winner = null;
+    const first = firstAttacker === fighter1.name ? fighter1 : fighter2;
+    const second = firstAttacker !== fighter2.name ? fighter2 : fighter1;
+    let winF = first.health;
+    let winS = second.health;
+
+    while (mark) {
+        winS -= first.damagePerAttack;
+        if (winS <= 0) {
+            winner = first.name;
+            mark = false;
+            return winner;
+        } else {
+            winF -= second.damagePerAttack;
+            if (winF <= 0) {
+                winner = second.name;
+                mark = false;
+                return winner;
+            }
+        }
+    }
+}*/
+
+// Task
+// Given a string str, reverse it and omit all non-alphabetic characters.
+//
+//     Example
+// For str = "krishan", the output should be "nahsirk".
+//
+//     For str = "ultr53o?n", the output should be "nortlu".
+//
+//     Input/Output
+//     [input] string str
+// A string consists of lowercase latin letters, digits and symbols.
+//
+//     [output] a string
+
+
+/*function reverseLetter(str) {
+    return str.split('')
+        .reverse()
+        .join('')
+        .replace(/[\W \s \d \_]/gi, '');
+}
+
+console.log(reverseLetter("r9gpzuk$lwm1flvaetilez_@czcz8!.njp-yynulc"))*/
+
+
+
+
+// The first input array is the key to the correct answers to an exam, like ["a", "a", "b", "d"]. The second one contains a student's submitted answers.
+//
+// The two arrays are not empty and are the same length. Return the score for this array of answers, giving +4 for each correct answer, -1 for each incorrect answer, and +0 for each blank answer, represented as an empty string (in C the space character is used).
+//
+// If the score < 0, return 0.
+
+// function checkExam(array1, array2) {
+//     let res = 0;
+//
+//     for(let i = 0; i < array1.length; i++) {
+//         if(array2[i] === '') {
+//             continue
+//         } else {
+//             if(array1[i] === array2[i]) {
+//                 res += 4;
+//             } else {
+//                 res -= 1;
+//             }
+//         }
+//     }
+//     return res < 0 ? 0 : res;
+// }
+//
+// console.log(checkExam(["a", "a", "b", "b"], ["a", "c", "b", "d"]))
+
+
+// Write a function named sumDigits which takes a number as input and returns the sum of the absolute value of each of the number's decimal digits.
+
+
+// function sumDigits(number) {
+//     return (number + '').replace(/\D/gi, '0')
+//         .split('')
+//         .reduce((acc, el) => acc += +el, 0);
+// }
+//
+//
+// console.log(sumDigits(-32))
+
+
+
+// In this Kata, you will be given a string that may have mixed uppercase and lowercase letters and your task is to convert that string to either lowercase only or uppercase only based on:
+//
+//     make as few changes as possible.
+//     if the string contains equal number of uppercase and lowercase letters, convert the string to lowercase.
+
+
+// function solve(s) {
+//     let res = s.split('');
+//     let halfOfLength = 0;
+//     for (let i = 0; i < res.length; i++) {
+//         if (res[i].toUpperCase() === res[i]) halfOfLength += 1;
+//     }
+//     console.log(res.length)
+//     console.log(halfOfLength)
+//     console.log(res.length / halfOfLength)
+//     if (halfOfLength === 0 || res.length / halfOfLength >= 2) {
+//         return res.join('').toLowerCase();
+//     }
+//     return res.join('').toUpperCase();
+// }
+//
+// console.log(solve("COdeFfDd"));
+
+
+// Task
+// Given a Divisor and a Bound , Find the largest integer N , Such That ,
+//
+//     Conditions :
+// N is divisible by divisor
+//
+// N is less than or equal to bound
+//
+// N is greater than 0.
+
+
+// function maxMultiple(divisor, bound){
+//     let mark = true;
+//     let res = 0;
+//     while(mark) {
+//         res += divisor;
+//         if((bound - res) < divisor ) {
+//             mark = false;
+//             return res;
+//         }
+//     }
+// }
+//
+//
+// console.log(maxMultiple(3,10))
