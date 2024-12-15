@@ -382,3 +382,190 @@ console.log(reverseLetter("r9gpzuk$lwm1flvaetilez_@czcz8!.njp-yynulc"))*/
 //
 //
 // console.log(maxMultiple(3,10))
+
+
+Task
+// Given a list of digits, return the smallest number that could be formed from these digits, using the digits only once (ignore duplicates). Only positive integers in the range of 1 to 9 will be passed to the function.
+
+// function minValue(values){
+//     let arr = Array.from(new Set(values))
+//     return parseInt(arr.sort().join(''))
+// }
+//
+// console.log(minValue([1, 3, 1]))
+
+
+
+// Given a string, capitalize the letters that occupy even indexes and odd indexes separately, and return as shown below. Index 0 will be considered even.
+//
+//     For example, capitalize("abcdef") = ['AbCdEf', 'aBcDeF']. See test cases for more examples.
+//
+//     The input will be a lowercase string with no spaces.
+//
+//     Good luck!
+
+
+// function capitalize(s){
+//     const newArr = s.split('').map((el, index) => {
+//         if(index === 0 || index % 2 === 0) {
+//             return el.toUpperCase()
+//         } else {
+//             return el;
+//         }
+//     }).join('');
+//     const newArr2 = s.split('').map((el, index) => {
+//         if(index === 1 || index % 2 === 1) {
+//             return el.toUpperCase()
+//         } else {
+//             return el;
+//         }
+//     }).join('');
+//     return [newArr, newArr2];
+// };
+//
+// console.log(capitalize("abcdef"));
+
+
+// Given a 2D ( nested ) list ( array, vector, .. ) of size m * n, your task is to find the sum of the minimum values in each row.
+
+// function sumOfMinimums(arr) {
+//     const resArr = [];
+//     arr.forEach(el => {
+//         let sortArr = el.sort((a, b) => a - b);
+//         resArr.push(sortArr[0]);
+//     })
+//     return resArr.reduce((acc, el) => acc += el, 0);
+// }
+//
+// console.log(sumOfMinimums([[7, 9, 8, 6, 2], [6, 3, 5, 4, 3], [5, 8, 7, 4, 5]]));
+
+
+
+// Given a sequence of numbers, find the largest pair sum in the sequence.
+
+
+// function largestPairSum (numbers) {
+//     const res = numbers.sort((a, b) => a - b).slice(-2);
+//     return res[0] + res[1];
+// }
+//
+// console.log(largestPairSum([10,14,2,23,19]))
+
+
+// Write a small function that returns the values of an array that are not odd.
+//
+//     All values in the array will be integers. Return the good values in the order they are given.
+
+
+// function noOdds( values ){
+//     return values.filter((el, i) => i % 2 === 0);
+// }
+//
+// console.log(noOdds([-59,169,186,11,200,104,-39,155,9,91,140,-99,177,31,1,119,-194,-155,-140,137,-195,-27,-100,182,-199,-144,-22,76,-88,-47,101,139,176,-19,-31,57,-74,58,-168,125,-102,191,169,200,-80,-95,35,51,-82,196,-157,44,-165,-105,3,-65,12,-12,114,17,38,128,-145,188,-61,90,173,-60,198,60,-150,84,-14,4,169,100,-6,-99,-108,-189,-34,-134,150,-18,144,107,-191,-94,-150,151,82,174,171,-177,174,-19,-51,142,98,-94,-3,189,164,-137,-132,-138,-27,-18,-1,-162,199,-184,25,135,-67,187,-34,-111,-27,-98,-39,181,-35,25,-95,-140,6,-187,-199,76,166,-193,-128,-68,166,-151,-187,-64,-136,74,4,-151,26,-95,166,-164,-75,2,-22,-57,179,-154,-112,6,193,-100,-18,23,-196,45,52,-67,-1,9,168,-139,-177,138,133,-199,96,-12,-148,-5,177,-156,58,42,-161,-61,-93,-122,-28,-56,-161]))
+
+
+
+// Given an array of numbers, return a new array of length number containing the last even numbers from the original array (in the same order). The original array will be not empty and will contain at least "number" even numbers.
+
+// function evenNumbers(array, number) {
+//     return array.filter(el => el % 2 === 0).slice(-number);
+// }
+//
+// console.log(evenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9], 3))
+
+
+// Complete the method which accepts an array of integers, and returns one of the following:
+//
+//     "yes, ascending" - if the numbers in the array are sorted in an ascending order
+// "yes, descending" - if the numbers in the array are sorted in a descending order
+// "no" - otherwise
+// You can assume the array will always be valid, and there will always be one correct answer.
+
+
+// function isSortedAndHow(array) {
+//     const answerArr = ['yes, ascending', 'yes, descending', 'no'];
+//     const ascending = [...array].sort((a, b) => a - b);
+//     const descending = [...array].sort((a, b) => b - a);
+//     let mark = false;
+//
+//     console.log(descending)
+//     console.log(array)
+//
+//     function check(arr) {
+//         let res = 0;
+//         for (let i = 0; i < array.length; i++) {
+//             if (array[i] === arr[i]) {
+//                 res += 1;
+//             }
+//         }
+//
+//         if (res === arr.length) {
+//             mark = true;
+//             return;
+//         }
+//     }
+//
+//     check(ascending);
+//     if (mark) {
+//         return answerArr[0]
+//     }
+//     check(descending);
+//     if (mark) {
+//         return answerArr[1]
+//     }
+//     return answerArr[2]
+//
+//
+//
+//
+// }
+// function isSortedAndHow(arr) {
+//     return arr.every((x,i)=>i==0||arr[i]>=arr[i-1])?'yes, ascending':
+//         arr.every((x,i)=>i==0||arr[i]<=arr[i-1])?'yes, descending':'no'
+// }
+
+// console.log(isSortedAndHow([4, 2, 30]))
+
+
+
+// My grandfather always predicted how old people would get, and right before he passed away he revealed his secret!
+//
+//     In honor of my grandfather's memory we will write a function using his formula!
+//
+// Take a list of ages when each of your great-grandparent died.
+//     Multiply each number by itself.
+//     Add them all together.
+//     Take the square root of the result.
+//     Divide by two.
+
+// function predictAge([...rest]){
+//     return Math.sqrt(rest.map(el => el * el)
+//         .reduce((acc, el) => acc + el, 0)) / 2
+// }
+//
+// console.log(predictAge(65,60,75,55,60,63,64,45))
+
+
+// Task
+// Given an array of integers , Find the maximum product obtained from multiplying 2 adjacent numbers in the array. Note that the array size is at least 2 and consists a mixture of positive, negative integers and also zeroes.
+
+// function adjacentElementsProduct(array) {
+//     let res = null;
+//     array.forEach((el, index) => {
+//         let fd = el * array[index + 1];
+//         if(fd > res || res === null) res = fd;
+//     })
+//     return res
+// }
+//
+// console.log(adjacentElementsProduct([-23, 4, -5, 99, -27, 329, -2, 7, -921]))
+
+
+// Your car is old, it breaks easily. The shock absorbers are gone and you think it can handle about 15 more bumps before it dies totally.
+//     Unfortunately for you, your drive is very bumpy! Given a string showing either flat road (_) or bumps (n). If you are able to reach home safely by encountering 15 bumps or less, return Woohoo!, otherwise return Car Dead
+
+function bump(x){
+    return x.split('_').length
+}
+
+console.log(bump("__nn_nnnn__n_n___n____nn__nnn"))
