@@ -561,11 +561,37 @@ Task
 // console.log(adjacentElementsProduct([-23, 4, -5, 99, -27, 329, -2, 7, -921]))
 
 
-// Your car is old, it breaks easily. The shock absorbers are gone and you think it can handle about 15 more bumps before it dies totally.
-//     Unfortunately for you, your drive is very bumpy! Given a string showing either flat road (_) or bumps (n). If you are able to reach home safely by encountering 15 bumps or less, return Woohoo!, otherwise return Car Dead
 
-function bump(x){
-    return x.split('_').length
+// Year Of Course always Positive .
+//     Have no fear , It is guaranteed that the answer exists .
+//     It's not necessary that the year passed to the function is Happy one .
+// Input Year with in range (1000  ≤  y  ≤  9000)
+
+/*
+function nextHappyYear(year){
+    let res = null;
+    for(let i = year + 1; i <= 10000; i++) {
+        let nextYear = i.toString().split('');
+        if(Array.from(new Set(nextYear)).length === 4){
+            res = i;
+            return res;
+        }
+    }
 }
 
-console.log(bump("__nn_nnnn__n_n___n____nn__nnn"))
+
+console.log(nextHappyYear(1987))*/
+
+
+/*
+Please write a function that sums a list, but ignores any duplicated items in the list.
+
+    For instance, for the list [3, 4, 3, 6] the function should return 10,
+    and for the list [1, 10, 3, 10, 10] the function should return 4.*/
+
+
+function sumNoDuplicates(numList) {
+
+}
+
+console.log(sumNoDuplicates([1, 1, 2, 3]))
