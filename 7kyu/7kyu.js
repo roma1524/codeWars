@@ -1,3 +1,4 @@
+
 // /*
 // Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
 
@@ -372,7 +373,7 @@ console.log(reverseLetter("r9gpzuk$lwm1flvaetilez_@czcz8!.njp-yynulc"))*/
 // console.log(maxMultiple(3,10))
 
 
-Task
+// Task
 // Given a list of digits, return the smallest number that could be formed from these digits, using the digits only once (ignore duplicates). Only positive integers in the range of 1 to 9 will be passed to the function.
 
 // function minValue(values){
@@ -546,7 +547,7 @@ Task
 
 
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
 // function bump(x){
 //     return x.split('_').length
 // }
@@ -723,7 +724,7 @@ Task
 // }
 //
 // console.log(smallEnough([66, 101], 200))
-=======
+{/*=======*/}
 // Year Of Course always Positive .
 //     Have no fear , It is guaranteed that the answer exists .
 //     It's not necessary that the year passed to the function is Happy one .
@@ -752,9 +753,19 @@ Please write a function that sums a list, but ignores any duplicated items in th
     and for the list [1, 10, 3, 10, 10] the function should return 4.*/
 
 
-function sumNoDuplicates(numList) {
+// function sumNoDuplicates(numList) {
+//
+// }
+//
+// console.log(sumNoDuplicates([1, 1, 2, 3]))
+// >>>>>>> 18d5a88827cc9c2fc7554965994c42b3728ac12d
 
-}
+// Given a two-dimensional array of integers, return the flattened version of the array with all the integers in the sorted (ascending) order.
 
-console.log(sumNoDuplicates([1, 1, 2, 3]))
->>>>>>> 18d5a88827cc9c2fc7554965994c42b3728ac12d
+
+// function flattenAndSort(array) {
+//
+//     return array.flat(Infinity).sort((a, b) => a - b);
+// }
+//
+// console.log(flattenAndSort([[3, 2, 1], [7, 9, 8], [6, 4, 5]]))
