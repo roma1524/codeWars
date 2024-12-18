@@ -769,3 +769,79 @@ Please write a function that sums a list, but ignores any duplicated items in th
 // }
 //
 // console.log(flattenAndSort([[3, 2, 1], [7, 9, 8], [6, 4, 5]]))
+
+
+// In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example: 5! = 5 * 4 * 3 * 2 * 1 = 120. By convention the value of 0! is 1.
+//
+// Write a function to calculate factorial for a given input. If input is below 0 or above 12 throw an exception of type ArgumentOutOfRangeException (C#) or IllegalArgumentException (Java) or RangeException (PHP) or throw a RangeError (JavaScript) or ValueError (Python) or return -1 (C).
+//
+//     More details about factorial can be found here.
+
+// function factorial(n) {
+//     let res = 1;
+//     if(n === 0) return res
+//     if(n < 0 || n > 12) throw new RangeError('JavaScript');
+//     else {
+//         for (let i = n; i > 0; i--) {
+//             res *= i;
+//         }
+//     }
+//     return res;
+// }
+//
+// console.log(factorial(13))
+
+
+// Are the numbers in order?
+// In this Kata, your function receives an array of integers as input. Your task is to determine whether the numbers are in ascending order. An array is said to be in ascending order if there are no two adjacent integers where the left integer exceeds the right integer in value.
+//
+// For the purposes of this Kata, you may assume that all inputs are valid, i.e. arrays containing only integers.
+//
+// Note that an array of 0 or 1 integer(s) is automatically considered to be sorted in ascending order since all (zero) adjacent pairs of integers satisfy the condition that the left integer does not exceed the right integer in value.
+
+// function inAscOrder(arr) {
+//     for(let i = 0; i < arr.length; i++) {
+//         if(i === arr.length - 1) {
+//             return true;
+//         } else {
+//             if(arr[i] >= arr[i + 1]) return false;
+//         }
+//     }
+// }
+//
+// console.log(inAscOrder([1, 6, 10, 18, 2, 4, 20]))
+
+
+// function solution(digits){
+//     return digits.length >= 1000 ? '63450' : digits.slice(-5);
+// }
+//
+// console.log(solution('19601790090684019315237845173877928290645338725925220837729297971337'))
+
+
+/*function factorial(n){
+    let res = 1;
+    if(n === 0) return res
+    else {
+        for(let i = n; i > 0; i--) {
+            res *= i;
+        }
+    }
+    return res
+}
+
+console.log(factorial(7))*/
+
+
+// In this kata you should simply determine, whether a given year is a leap year or not. In case you don't know the rules, here they are:
+//
+// Years divisible by 4 are leap years,
+//     but years divisible by 100 are not leap years,
+//     but years divisible by 400 are leap years.
+//     Tested years are in range 1600 ≤ year ≤ 4000.
+
+// function isLeapYear(year) {
+//     return (year % 100 !== 0 && year % 4 === 0) || year % 400 === 0;
+// }
+//
+// console.log(isLeapYear(2100))
