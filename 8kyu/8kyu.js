@@ -56,8 +56,6 @@
 //
 
 
-
-
 // function highAndLow(numbers){
 // let toArray = numbers.split('');
 //
@@ -69,8 +67,6 @@
 //     }
 //
 //     console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
-
-
 
 
 // function isItLetter(character) {
@@ -106,13 +102,11 @@
 //   console.log(reverseOddCount(['a', 'a', 'b', 'c', 'c', 'd']));
 
 
-
 // function makeNegative(num) {
 //     return num <= 0 ? num : -num;
 //    }
 //
 //    console.log(makeNegative(5));
-
 
 
 // Your task is to create a function that does four basic mathematical operations.
@@ -137,7 +131,6 @@
 //   }
 //
 //   console.log(basicOp("+", 4, 7));
-
 
 
 // Write a function findNeedle() that takes an array full of junk but containing one "needle"
@@ -233,7 +226,6 @@
 // function smash (words) {
 //     return words.join(' ')
 // };
-
 
 
 // Build a function that returns an array of integers from n to 1 where n>0.
@@ -400,7 +392,6 @@ function rentalCarCost(d) {
 console.log(rentalCarCost(3))*/
 
 
-
 // It's the academic year's end, fateful moment of your school report. The averages must be calculated. All the students come to you and entreat you to calculate their average for them. Easy ! You just need to write a script.
 //
 //     Return the average of the given array rounded down to its nearest integer.
@@ -428,8 +419,6 @@ console.log(getAverage([1,2,3,4,5,]))*/
 // }
 //
 // console.log(feast("brown bear", "bear claw"))
-
-
 
 
 // You take your son to the forest to see the monkeys. You know that there are a certain number there (n), but your son is too young to just appreciate the full number, he has to start counting them from 1.
@@ -460,3 +449,157 @@ function bonusTime(salary, bonus) {
 }
 
 console.log(bonusTime(10000, true))*/
+
+// Given a month as an integer from 1 to 12, return to which quarter of the year it belongs as an integer number.
+//
+//     For example: month 2 (February), is part of the first quarter; month 6 (June), is part of the second quarter; and month 11 (November), is part of the fourth quarter.
+
+// const quarterOf = (month) => {
+//     let res = 0;
+//     if(month <= 3) res = 1;
+//     if(month > 3 && month <= 6) res = 2;
+//     if(month > 6 && month <= 9) res = 3;
+//     if(month > 9 && month <= 12) res = 4;
+//     return res;
+// }
+//
+// console.log(quarterOf(8))
+//
+// const quarterOf = (month) => {
+//     return Math.ceil(month/3);
+// }
+//
+// console.log(quarterOf(11))
+
+
+// Take an array and remove every second element from the array. Always keep the first element and start removing with the next element.
+
+
+// function removeEveryOther(arr){
+//     return arr.filter((el, ind) => ind % 2 !== 1)
+// }
+//
+// console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+
+
+// Create a function that accepts a string and a single character, and returns an integer of the count of occurrences the 2nd argument is found in the first one.
+//
+//     If no occurrences can be found, a count of 0 should be returned.
+
+// function strCount(str, letter){
+//     let res = 0;
+//     str.split('').forEach(el => {
+//         if(el === letter) res += 1;
+//     })
+//     return res;
+// }
+//
+// console.log(strCount('Hello', 'l'))
+
+
+// function firstNonConsecutive (arr) {
+//     let res = 0;
+//     for(let i = 0; i < arr.length; i++) {
+//         let f = arr[i + 1] - arr[i];
+//         if(f > 1) {
+//             res = arr[i + 1];
+//             return res;
+//         }
+//     }
+//     return res !== 0 ? res : null;
+// }
+//
+// console.log(firstNonConsecutive([1,3,4,5,6,7,9,10]))
+
+
+// function testEven(n) {
+//     return n % 2 === 0 ? true : false;
+// }
+//
+// console.log(testEven(0.5))
+
+
+// Write a function that checks if a given string (case insensitive) is a palindrome.
+//
+//     A palindrome is a word, number, phrase, or other sequence of symbols that reads the same backwards as forwards, such as madam or racecar.
+
+
+// function isPalindrome(x) {
+//     let res = x.toLowerCase();
+//     return res === x.toLowerCase().split('').reverse().join('') ? true : false;
+// }
+//
+// console.log(isPalindrome('Abba'))
+
+// function str (string) {
+//     let res = [];
+//     string.split('').forEach(el => {
+//         if(el === el.toLowerCase()) res.push(el.toUpperCase())
+//         if(el === el.toUpperCase()) res.push(el.toLowerCase())
+//     })
+//     return res.join('');
+// }
+//
+// console.log(str("HeLLo WoRLD"))
+
+
+// function greet(language) {
+//     let res = 'Welcome';
+//     const lang = [
+//         {english: "Welcome"},
+//         {czech: "Vitejte"},
+//         {danish: "Velkomst"},
+//         {dutch: "Welkom"},
+//         {estonian: "Tere tulemast"},
+//         {finnish: "Tervetuloa"},
+//         {flemish: "Welgekomen"},
+//         {french: "Bienvenue"},
+//         {german: "Willkommen"},
+//         {irish: "Failte"},
+//         {italian: "Benvenuto"},
+//         {latvian: "Gaidits"},
+//         {lithuanian: "Laukiamas"},
+//         {polish: "Witamy"},
+//         {spanish: "Bienvenido"},
+//         {swedish: "Valkommen"},
+//         {welsh: "Croeso"},
+//     ]
+//     lang.forEach(el => {
+//
+//         for(let key in el) {
+//             if(key === language) res = el[language];
+//         }
+//     })
+//     return res;
+// }
+//
+// console.log(greet('dutch'))
+
+// function stringy(size) {
+//     let str = '';
+//     for(let i = 0; i < size; i++) {
+//         if(i % 2 === 1) str += 0;
+//         if(i % 2 === 0) str += 1;
+//     }
+//     return str;
+// }
+//
+// console.log(stringy(7))
+
+
+// function findMultiples(integer, limit) {
+//     let res = 0;
+//     const resArr = []
+//     let mark = true;
+//     while (mark) {
+//         res += integer;
+//         resArr.push(res);
+//         if(res > limit) {
+//             resArr.pop()
+//             mark = false;
+//         }
+//     }
+//     return resArr;
+// }
+//
+// console.log(findMultiples(4, 27))
