@@ -603,3 +603,81 @@ console.log(bonusTime(10000, true))*/
 // }
 //
 // console.log(findMultiples(4, 27))
+
+
+// function expressionMatter(a, b, c) {
+//     const res = 0;
+//     console.log(arguments)
+// }
+//
+// console.log(expressionMatter(2, 1, 1))
+
+
+// function getAge(inputString){
+//     return inputString.split('')[0];
+// }
+//
+// console.log(getAge("4 years old"))
+
+// function getAge(inputString){
+//     return Number(inputString.split('')[0]);
+// }
+//
+// console.log(getAge("4 years old"))
+
+// function switchItUp(number){
+//     const obj = {
+//         0: 'Zero',
+//         1: 'One',
+//         2: 'Two',
+//         3: 'Three',
+//         4: 'Four',
+//         5: 'Five',
+//         6: 'Six',
+//         7: 'Seven',
+//         8: 'Eight',
+//         9: 'Nine'
+//     }
+//     return obj[number];
+// }
+//
+// console.log(switchItUp(3))
+
+
+// function solution(a, b){
+//     return a.length < b.length ? `${a}${b}${a}` : `${b}${a}${b}`
+// }
+//
+// console.log(solution('13', '200'))
+
+
+// function pipeFix(numbers){
+//     const res = [];
+//
+//     for(let i = numbers[0]; i <= numbers[numbers.length - 1]; i++) {
+//         res.push(i);
+//     }
+//     return res;
+// }
+//
+// console.log(pipeFix([1,2,3,5,6,8,9]))
+
+
+// function noBoringZeros(n) {
+//     let res = n;
+//     if(res % 10 === 0) {
+//         res /= 10;
+//     }
+//     return res;
+// }
+//
+// console.log(noBoringZeros(1050))
+
+
+// function capitalizeWord(word) {
+//     const res = word.split('');
+//     res[0] = res[0].toUpperCase()
+//     return res.join('');
+// }
+//
+// console.log(capitalizeWord('word'))
