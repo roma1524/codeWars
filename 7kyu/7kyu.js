@@ -590,8 +590,26 @@ Please write a function that sums a list, but ignores any duplicated items in th
     and for the list [1, 10, 3, 10, 10] the function should return 4.*/
 
 
+/*
 function sumNoDuplicates(numList) {
+    const res = {};
+    const arr = [];
+    [...numList].forEach(item => {
+        if (res[item]) res[item] += 1;
+        else res[item] = 1
+    })
 
+    for (let key in res) {
+        if(res[key] === 1) arr.push(+key)
+    }
+    return arr.reduce((a, b) => a + b, 0);
 }
 
-console.log(sumNoDuplicates([1, 1, 2, 3]))
+function sumNoDuplicates(numList) {
+    return numList.filter((i)=> numList.indexOf(i) == numList.lastIndexOf(i)).reduce((a,b)=> a + b, 0)
+}
+
+
+console.log(sumNoDuplicates([0, 10, 8, 9, 7, 3, 3, 9, 3, 6, 0]))*/
+
+
