@@ -83,19 +83,3 @@
 // }
 //
 // console.log(persistence(39))
-
-// multiplicationTable = function(size) {
-//     const resArr = [];
-//     for (let i = 1; i <= size; i++) {
-//         let df = [];
-//         let int = i;
-//         for (let j = 1; j <= size; j++) {
-//             df.push(int);
-//             int += i
-//         }
-//         resArr.push(df);
-//     }
-//     return resArr;
-// }
-//
-// console.log(multiplicationTable(3));
