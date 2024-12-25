@@ -83,3 +83,48 @@
 // }
 //
 // console.log(persistence(39))
+
+
+// function solution(string) {
+//     let res = '';
+//     const arr = string.split('');
+//
+//     for (let i = 0; i < arr.length; i++) {
+//         if(arr[i] === arr[i].toLowerCase()) res += arr[i];
+//         if(arr[i] === arr[i].toUpperCase()) res += " " + arr[i];
+//     }
+//
+//     return res;
+// }
+//
+// console.log(solution('camelCasing'));
+
+// function isPrime(num) {
+//
+//     if (num <= 0 || num === 1) return false;
+//     for(let i = 2; i < num; i++) {
+//
+//         if(num !== 2 && num % i === 0) return false;
+//     }
+//
+//     return true;
+// }
+//
+// console.log(isPrime(75))
+
+// function count(string) {
+//     const res = {}
+//
+//     string.split('').forEach((char) => {
+//         if(res[char]) {
+//             res[char] += 1;
+//         } else {
+//             res[char] = 1;
+//         }
+//     })
+//
+//     return res;
+// }
+//
+// console.log(count('ABCA'))
+
