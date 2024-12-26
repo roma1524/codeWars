@@ -128,3 +128,32 @@
 //
 // console.log(count('ABCA'))
 
+// function solution(str) {
+//     const res = [];
+//     let fr = [];
+//     const arr = str.split('');
+//
+//     if (!str) return res;
+//
+//     for (let i = 0; i <= arr.length; i++) {
+//         if(i % 2 === 0){
+//             fr.push(arr[i]);
+//         }
+//         if (i % 2 === 1) {
+//             if(arr[i]) {
+//                 fr.push(arr[i]);
+//                 res.push(fr.join(''));
+//                 fr = []
+//             }
+//         }
+//         if( i % 2 === 1 && fr.length === 1 && !arr[i]) {
+//             fr.push('_');
+//             res.push(fr.join(''));
+//             fr = []
+//         }
+//     }
+//
+//     return res;
+// }
+//
+// console.log(solution('abcdefg'))
