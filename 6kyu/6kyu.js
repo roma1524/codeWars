@@ -157,3 +157,89 @@
 // }
 //
 // console.log(solution('abcdefg'))
+
+
+// function validPhoneNumber(phoneNumber){
+//     return !!phoneNumber.match(/\(\d{3}\)\s\d{3}-\d{4}/gi)
+// }
+//
+// console.log(validPhoneNumber("(098) 123 4567"))
+
+
+// function pyramid(n) {
+//     const res = [];
+//     if(!n) return res;
+//
+//     for(let i = 1; i <= n; i++) {
+//         let ff = [];
+//         for(let j = 0; j < i; j++) {
+//             ff.push(1);
+//         }
+//         res.push(ff);
+//         ff = [];
+//     }
+//
+//     return res;
+// }
+//
+// console.log(pyramid(5))
+
+// function upArray(arr) {
+//     let intArr = +arr.join('');
+//     let res = null;
+//     let check = arr.filter(item => item < 0 || item > 9)
+//
+//     if (!!check.length || !arr.length || arr[arr.length - 1] < 0 || arr[arr.length -1] > 9) {
+//         return res;
+//     } else if (arr.length > 10) {
+//         res = String(BigInt(arr.join('')) + BigInt(1)).split('').map(el => +el);
+//         if (arr.length > res.length && arr[0] === 0) res.unshift(0);
+//     } else {
+//         res = String((intArr + 1)).split('').map(item => +item);
+//         if (arr.length > res.length && arr[0] === 0) res.unshift(arr.shift());
+//     }
+//
+//     return res;
+// }
+//
+// console.log(upArray([0,9,1,8,0,7,9,3,3,5,7,4,0,1,1,4,8,2,9,3,6,5,1,0,3,2]))
+
+
+// function dashatize(num) {
+//     let res = String(num).split('').filter(n => n !== '-');
+//     let str = [];
+//     let strArr = [];
+//
+//     for (let i = 0; i < res.length; i++) {
+//         if (res[i] % 2 === 0 && res[i + 1] % 2 === 0 && res[i + 2] % 2 === 0) {
+//             str.push(res[i] + res[i + 1] + res[i + 2]);
+//             ++i;
+//             ++i;
+//         } else if (res[i] % 2 === 0 && res[i + 1] % 2 === 0) {
+//             str.push(res[i] + res[i + 1]);
+//             ++i;
+//         } else str.push(res[i]);
+//     }
+//
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] % 2 === 0 && str[i + 1] % 2 === 0) {
+//             strArr.push(str[i] + str[i + 1]);
+//             ++i;
+//         } else strArr.push(str[i]);
+//     }
+//
+//     return strArr.join('-') ?? str.join('-');
+// }
+
+// function dashatize(num) {
+//     return isNaN(num) ? 'NaN' : num.toString().match(/([13579]|[02468]+)/g).join('-');
+// };
+//
+// function dashatize(num) {
+//     return String(num)
+//         .replace(/([13579])/g, "-$1-")
+//         .replace(/--+/g, "-")
+//         .replace(/(^-|-$)/g, "")
+// }
+//
+// console.log(dashatize(928282))
