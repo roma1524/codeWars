@@ -311,3 +311,28 @@ function cleanString(s) {
 }
 
 console.log(cleanString('abc####d##c#'))*/
+
+
+
+/*
+function highestRank(arr){
+    const resObj = {}
+    const yt = []
+
+    arr.forEach(item=> !resObj[item] ? resObj[item] = 1: resObj[item] += 1);
+
+    for (let key in resObj) {
+        let bg = [key, resObj[key]];
+        yt.push(bg)
+    }
+    console.log(yt)
+    let res = [...yt[0]];
+
+    yt.forEach(item => {
+        if(item[1] >= res[1]) res = [...item]
+    })
+
+    return res[0];
+}
+
+console.log(highestRank([12, 10, 8, 8, 3, 3, 3, 3, 2, 4, 10, 12, 10]));*/
