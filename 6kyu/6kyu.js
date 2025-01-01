@@ -336,3 +336,21 @@ function highestRank(arr){
 }
 
 console.log(highestRank([12, 10, 8, 8, 3, 3, 3, 3, 2, 4, 10, 12, 10]));*/
+
+
+/*
+function reverse(str){
+    if(str.trim() === '') return str.trim();
+    let res = [];
+
+    str.split(' ').forEach((item, index) => {
+        if (index % 2 !== 0){
+            res.push(item.trim().split('').reverse().join(''));
+        } else {
+            res.push(item.trim())
+        }
+    });
+    return res.join(' ');
+}
+
+console.log(reverse(""));*/
