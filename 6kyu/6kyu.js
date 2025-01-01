@@ -354,3 +354,24 @@ function reverse(str){
 }
 
 console.log(reverse(""));*/
+
+
+/*
+function kebabize(str) {
+    const rr = str.split('').map((el, index) => {
+        if(Number(el) || +el === 0) {
+
+        }
+        else if (el === el.toUpperCase() && index === 0) {
+            return el.toLowerCase();
+        } else if (el === el.toUpperCase()) {
+            return '-' + el.toLowerCase()
+        } else {
+            return el
+        }
+    })
+
+    return rr.join('')
+}
+
+console.log(kebabize('ZawuuunJioyxioezaaeOweadTej0'))*/
