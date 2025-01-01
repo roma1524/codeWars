@@ -22,8 +22,6 @@
 // console.log(digitalRoot(132189))
 
 
-
-
 // function alphabetPosition(text) {
 //     const alphb = {
 //         a: 1,
@@ -243,3 +241,31 @@
 // }
 //
 // console.log(dashatize(928282))
+
+/*
+const a = [
+    [1, 2, 3],
+    [3, 2, 1],
+    [1, 1, 1]
+]
+const b = [
+    [2, 2, 1],
+    [3, 2, 3],
+    [1, 1, 3]
+]
+
+function matrixAddition(a, b) {
+    const result = []
+    for (let i = 0; i < a.length; i++) {
+        const fd = []
+        for (let j = 0; j < b.length; j++) {
+            fd.push(a[i][j] + b[i][j])
+        }
+        result.push(fd)
+    }
+    return result;
+}
+
+console.log(matrixAddition(a, b))*/
+
+
