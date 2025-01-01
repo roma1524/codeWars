@@ -293,3 +293,21 @@ function longestRepetition(s) {
 }
 
 console.log(longestRepetition('ba'))*/
+
+
+/*
+function cleanString(s) {
+    const str = s.split('');
+    let res = '';
+    if (s === '') return res;
+
+    for (let i = 0; i < str.length; i++) {
+
+        if(str[i] !== '#') res += str[i];
+        if(str[i] === '#') res = res.slice(0, -1)
+    }
+
+    return res;
+}
+
+console.log(cleanString('abc####d##c#'))*/
