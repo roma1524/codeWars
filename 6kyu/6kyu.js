@@ -269,3 +269,27 @@ function matrixAddition(a, b) {
 console.log(matrixAddition(a, b))*/
 
 
+/*
+function longestRepetition(s) {
+
+    if (s.length === 0) return ['', 0];
+    const res = [];
+    const arr = s.split('');
+    let ss = [arr[0]]
+    const result = [];
+
+    for (let i = 1; i < arr.length; i++) {
+        if (ss[0] === arr[i]) {
+            ss.push(arr[i]);
+        } else if (ss[0] !== arr[i]) {
+            res.push(ss)
+            ss = [arr[i]]
+        }
+    }
+    res.push(ss)
+    res.sort((a, b) => b.length - a.length);
+    console.log(res)
+    return [res[0][0], res[0].length];
+}
+
+console.log(longestRepetition('ba'))*/
