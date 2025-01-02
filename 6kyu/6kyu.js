@@ -406,3 +406,37 @@ function getLengthOfMissingArray(arrayOfArrays) {
 }
 
 console.log(getLengthOfMissingArray(null));*/
+
+
+
+/*
+function dup(s) {
+    let res = [];
+    s.map(el => {
+        let fd = []
+        for (let i = 0; i < el.length; i++) {
+            if(el[i] !== el[i + 1]) fd.push(el[i])
+        }
+        res.push(fd.join(''))
+    })
+    return res;
+}
+
+console.log(dup(["ccooddddddewwwaaaaarrrrsssss","piccaninny","hubbubbubboo"]))*/
+
+
+/*
+function twosDifference(input){
+    const res = [];
+
+    input.sort((a, b) => a - b).forEach(el => {
+        for (let i = 1; i < input.length; i++) {
+            if(input[i] - el === 2){
+                res.push([el, input[i]]);
+            }
+        }
+    })
+    return res;
+}
+
+console.log(twosDifference([4,1,2,3]));*/
