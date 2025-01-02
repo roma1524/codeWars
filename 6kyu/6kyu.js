@@ -375,3 +375,34 @@ function kebabize(str) {
 }
 
 console.log(kebabize('ZawuuunJioyxioezaaeOweadTej0'))*/
+
+
+/*
+function getLengthOfMissingArray(arrayOfArrays) {
+    if (arrayOfArrays === null) return 0;
+    else if (!arrayOfArrays.length) return 0;
+    else {
+        const resArr = arrayOfArrays.map(element => {
+            if(element !== null) {
+                return element.length
+            }
+        })
+            .sort((a, b) => a - b);
+        let min = resArr[0];
+        let max = resArr[resArr.length - 1];
+        const res = [];
+
+        if (!min) return 0;
+        for (let i = min; i < max; i++) {
+            res.push(i);
+        }
+        for (let j = 0; j < res.length; j++) {
+            if (res[j] !== resArr[j]) {
+                return res[j]
+            }
+        }
+    }
+    return 0;
+}
+
+console.log(getLengthOfMissingArray(null));*/
