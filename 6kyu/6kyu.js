@@ -440,3 +440,33 @@ function twosDifference(input){
 }
 
 console.log(twosDifference([4,1,2,3]));*/
+
+
+/*
+function shiftedDiff(first, second) {
+    if (first.trim() === second.trim() && first !== second) {
+        return -1;
+    } else if (first.toLowerCase() === second.toLowerCase() && first !== second) {
+        return -1;
+    } else if (first === second) {
+        return 0;
+    } else if (first === second.split('').reverse().join('') || first.split('').reverse().join('') === second) {
+        return -1;
+    } else {
+        let strFirst = first.split('');
+        let res = '';
+        let count = 0;
+        for (let i = 0; i < second.length; i++) {
+            res = strFirst[strFirst.length - 1] + ',';
+            res += strFirst.slice(0, -1);
+            count++;
+            strFirst = res.split(',').join('');
+            if (strFirst === second) {
+                return count;
+            }
+
+        }
+    }
+}
+
+console.log(shiftedDiff('doomhouse', 'hoodmouse'));*/
