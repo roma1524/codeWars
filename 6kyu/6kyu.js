@@ -469,4 +469,11 @@ function shiftedDiff(first, second) {
     }
 }
 
-console.log(shiftedDiff('doomhouse', 'hoodmouse'));*/
+console.log(shiftedDiff('doomhouse', 'hoodmouse'));
+
+function shiftedDiff(first, second) {
+  if (first.length != second.length) return -1
+  return (second + second).indexOf(first)
+}
+
+*/
