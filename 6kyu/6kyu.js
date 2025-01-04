@@ -313,7 +313,6 @@ function cleanString(s) {
 console.log(cleanString('abc####d##c#'))*/
 
 
-
 /*
 function highestRank(arr){
     const resObj = {}
@@ -408,7 +407,6 @@ function getLengthOfMissingArray(arrayOfArrays) {
 console.log(getLengthOfMissingArray(null));*/
 
 
-
 /*
 function dup(s) {
     let res = [];
@@ -475,5 +473,40 @@ function shiftedDiff(first, second) {
   if (first.length != second.length) return -1
   return (second + second).indexOf(first)
 }
-
 */
+
+
+/*
+function balance(left, right) {
+    function foo(arg) {
+        return arg.split('').map(el => {
+            if (el === '!') return 2;
+            if (el === '?') return 3;
+        })
+    }
+
+    const res1 = foo(left).reduce((acc, item) => acc + item, 0);
+    const res2 = foo(right).reduce((acc, item) => acc + item, 0);
+
+    return res1 > res2 ? 'Left' : res1 < res2 ? 'Right' : 'Balance';
+}
+
+console.log(balance("!!???!????","??!!?!!!!!!!"));*/
+
+
+/*
+function formatWords(words){
+
+    if (words === null || words.length === 0 || words.length === 1 && words[0] === "") return '';
+    else {
+        let gArr = words.filter(el => el.trim().length);
+
+        if (gArr.length === 1) return gArr.join('')
+        else if (gArr.length === 2) return gArr.join(' and ')
+        else {
+            return gArr.slice(0, -1).join(', ') + ' and ' + gArr[gArr.length - 1];
+        }
+    }
+}
+
+console.log(formatWords(["xgngjrg","estnecjbs","h","tztecrq","gvov",""]));*/
