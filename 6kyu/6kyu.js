@@ -510,3 +510,14 @@ function formatWords(words){
 }
 
 console.log(formatWords(["xgngjrg","estnecjbs","h","tztecrq","gvov",""]));*/
+
+
+function alphabetized(str) {
+    const res = {}
+    str.forEach((char) => {
+        res[char] = (char.charCodeAt(0) - 64)
+    })
+    return res;
+}
+
+console.log(alphabetized("The Holy Bible"))
