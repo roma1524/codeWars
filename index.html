@@ -14,38 +14,7 @@
 
 <script>
 
-    function alphabetized(str) {
-        const res = {};
-        const resArr = [];
-        const resArr1 = [];
 
-        str.split('').forEach((char) => {
-
-            if (char.trim() === '') {}
-            else {
-                let ds = char.toLowerCase().charCodeAt(0) - 64;
-                res[char] = ds
-            }
-        })
-        for (let key in res) {
-            resArr.push(res[key])
-        }
-        resArr.sort((a, b) => a - b)
-        for (let i = 0; i < resArr.length; i++) {
-            for (let key in res) {
-                if (resArr[i] === res[key]) {
-                    if(resArr1 && resArr[i] > resArr1[length - 1] ) {
-                        resArr1.push(key)
-                    }
-                }
-            }
-        }
-
-        return resArr1.join('');
-    }
-
-    console.log(alphabetized("The Holy Bible"))
-    console.log('BbBbehHhHiloTy' === 'BbeehHilloTy')
 
 </script>
 </body>
