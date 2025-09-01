@@ -511,4 +511,3 @@ function formatWords(words){
 
 console.log(formatWords(["xgngjrg","estnecjbs","h","tztecrq","gvov",""]));*/
 
-
