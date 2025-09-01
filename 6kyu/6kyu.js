@@ -511,7 +511,8 @@ function formatWords(words){
 
 console.log(formatWords(["xgngjrg","estnecjbs","h","tztecrq","gvov",""]));*/
 
-let numbers = [1, 2, 4, 2, 1, 5, 4, 7, 8, 7, 1, 1];
+
+/*let numbers = [1, 2, 4, 2, 1, 5, 4, 7, 8, 7, 1, 1];
 const objectOfNumbers = {}
 
 for (let i = 0; i <= numbers.length - 1; i++) {
@@ -529,3 +530,4 @@ for(let key in objectOfNumbers) {
 }
 
 console.log(objectOfNumbers);
+*/
