@@ -28,6 +28,7 @@ console.log(minNumber);
 console.log(maxNumber);*/
 
 
+/*
 let numbers = [1, 2, 4, 2, 1, 5, 4, 7, 8, 7, 1, 1];
 const objectOfNumbers = {}
 
@@ -46,3 +47,4 @@ for(let key in objectOfNumbers) {
 }
 
 console.log(objectOfNumbers);
+*/
