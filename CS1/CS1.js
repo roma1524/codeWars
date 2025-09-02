@@ -62,3 +62,24 @@ for (let i = 0; i < array.length; i++) {
     tempArray.splice(minIndex, 1);
 }
 console.log(resultArray)
+
+/*
+let numbers = [1, 2, 4, 2, 1, 5, 4, 7, 8, 7, 1, 1];
+const objectOfNumbers = {}
+
+for (let i = 0; i <= numbers.length - 1; i++) {
+    if(objectOfNumbers[numbers[i]]) {
+        objectOfNumbers[numbers[i]] += 1;
+    } else {
+        objectOfNumbers[numbers[i]] = 1;
+    }
+}
+
+for(let key in objectOfNumbers) {
+    if(objectOfNumbers[key] < 2) {
+        delete objectOfNumbers[key];
+    }
+}
+
+console.log(objectOfNumbers);
+*/
