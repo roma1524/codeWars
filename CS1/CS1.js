@@ -46,7 +46,7 @@ console.log(maxNumber);*/
 //
 // console.log(objectOfNumbers);
 
-const array = [7, 1, 5, 3, 10, 3, 4, 1, 2];
+/*const array = [7, 1, 5, 3, 10, 3, 4, 1, 2];
 const resultArray = [];
 
 const tempArray = [...array];
@@ -61,7 +61,7 @@ for (let i = 0; i < array.length; i++) {
     resultArray.push(tempArray[minIndex]);
     tempArray.splice(minIndex, 1);
 }
-console.log(resultArray)
+console.log(resultArray)*/
 
 /*
 let numbers = [1, 2, 4, 2, 1, 5, 4, 7, 8, 7, 1, 1];

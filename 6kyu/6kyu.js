@@ -507,4 +507,4 @@ function formatWords(words){
             return gArr.slice(0, -1).join(', ') + ' and ' + gArr[gArr.length - 1];
         }
     }
-}
+}*/
